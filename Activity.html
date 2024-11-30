@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sorting arrays</title>
+</head>
+<body>
+<h3>Javascript Array sort</h3>   
+<p>435,234,678,123,352,987,511 
+<br>
+click on buttons to sort numbers in acsending or decsending order</p>
+<button onclick="acsending()"> Acsending order</button>
+<button onclick="decsending()"> decsending order</button>
+<p id="result"></p>
+
+<script>
+var numbers = [435,234,678,123,352,987,511];
+
+function acsending()
+    {
+numbers.sort( function (a,b){return a-b;})
+document.getElementById("results").innerHTML= numbers;
+    }
+
+    function decsending()
+    {
+numbers.sort( function (a,b){return b-a;})
+document.getElementById("results").innerHTML= numbers;  
+
+</script>
+</body>
+</html>
